@@ -128,10 +128,10 @@ const COLORS  = { pool:'#1a8fc1', track:'#d44a2b', velodrome:'#9c5fc4', hockey:'
 const LABELS  = { pool:'50m / 33m Pool', track:'Athletics Track', velodrome:'Velodrome', hockey:'Hockey Field', hall:'Sports Hall' };
 const QUERY_TERMS = {
   pool:      ['50m swimming pool', 'olympic swimming pool', 'aquatics centre', 'aquatic centre', 'international swimming centre'],
-  track:     ['athletics track', 'athletics stadium', 'national athletics centre', 'athletics arena'],
+  track:     ['athletics track', 'athletics stadium', 'national athletics centre', 'athletics arena', 'sporting complex athletics'],
   velodrome: ['indoor velodrome', 'olympic velodrome', 'UCI track cycling velodrome'],
-  hockey:    ['field hockey pitch', 'hockey astroturf pitch', 'FIH hockey pitch', 'water based hockey pitch', 'national hockey centre'],
-  hall:      ['indoor sports centre', 'national sports centre', 'multi-sport arena', 'institute of sport', 'performance centre sport']
+  hockey:    ['field hockey pitch', 'hockey astroturf pitch', 'FIH hockey pitch', 'water based hockey pitch', 'national hockey centre', 'hockey club', 'hockey stadium'],
+  hall:      ['indoor sports centre', 'national sports centre', 'multi-sport arena', 'institute of sport', 'performance centre sport', 'sporting complex']
 };
 const ELITE_KW = {
   pool:      ['olympic','50m','aquatic','national','international','competition'],
@@ -340,12 +340,12 @@ const GLOBAL_EXCLUDE = ['shop', 'store', 'hire', 'rental', 'repair', 'café', 'c
 // Each type must contain at least one of its required words in the name to qualify
 const REQUIRED_WORDS = {
   pool:      ['pool', 'aquatic', 'swim', 'leisure centre', 'leisure center'],
-  track:     ['track', 'stadium', 'athletics', 'arena'],
+  track:     ['track', 'stadium', 'athletics', 'arena', 'sporting complex', 'sports complex', 'sport complex'],
   velodrome: ['velodrome'],
   hockey:    ['hockey'],
   hall:      ['sports hall', 'sports centre', 'sports center', 'leisure centre', 'leisure center',
               'arena', 'gymnasium', 'gym', 'indoor sports', 'performance centre', 'performance center',
-              'institute of sport']
+              'institute of sport', 'sporting complex', 'sports complex', 'sport complex']
 };
 
 function isValidVenue(name, type) {
